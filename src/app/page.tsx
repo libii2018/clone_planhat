@@ -1,5 +1,8 @@
+"use client";
+import { useEffect, useRef, useState } from "react";
 import Features from "@/components/features";
 import Header from "@/components/header";
+
 import Navbar from "@/components/navbar";
 import Testimoniale from "@/components/testimoniale";
 import Curstomers from "@/components/curstomers";
@@ -7,10 +10,21 @@ import Stats from "@/components/Stats";
 import Footer from "@/components/footer";
 
 export default function Home() {
+  const [headerIsVisible, setHeaderIsVisible] = useState<boolean>();
+  const headerRef = useRef<HTMLDListElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      setHeaderIsVisible(entry.isIntersecting);
+    });
+    observer.observe(headerRef.current);
+  });
+
   return (
     <div>
-      <Navbar />
-      <Header />
+      <Navbar headerIsVisible={headerIsVisible} />
+      <Header headerRef={headerRef} />
       <Curstomers />
       <Testimoniale />
       <Features />

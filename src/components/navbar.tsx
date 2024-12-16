@@ -1,4 +1,8 @@
-export default function Navbar() {
+export default function Navbar({
+  headerIsVisible,
+}: {
+  headerIsVisible: boolean;
+}) {
   return (
     <>
       <nav className="left-0 right-0 top-0 order-1 h-16 fixed z-10 lg:absolute">
@@ -41,14 +45,21 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      <div className="fixed hidden z-20 top-[5%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 py-2 px-5 gap-3 lg:flex flex-row items-center justify-between backdrop-blur-[10px] bg-gradient-to-r from-[rgba(255,255,255,0.08)] to-[rgba(255,255,255,0.05)] rounded-[400px] shadow-[rgba(0,0,0,0.027)_0px_0.637px_2.166px_-0.25px,rgba(0,0,0,0.03)_0px_1.932px_6.568px_-0.5px,rgba(0,0,0,0.047)_0px_5.106px_17.361px_-0.75px,rgba(0,0,0,0.094)_0px_16px_54.4px_-1px]">
+      <div
+        className={`fixed hidden z-20 top-[5%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 py-2 px-5 gap-3 lg:flex flex-row items-center justify-between rounded-[400px] shadow-[rgba(0,0,0,0.027)_0px_0.637px_2.166px_-0.25px,rgba(0,0,0,0.03)_0px_1.932px_6.568px_-0.5px,rgba(0,0,0,0.047)_0px_5.106px_17.361px_-0.75px,rgba(0,0,0,0.094)_0px_16px_54.4px_-1px]
+          ${
+            headerIsVisible
+              ? "text-white backdrop-blur-[10px] bg-gradient-to-r from-[rgba(255,255,255,0.08)] to-[rgba(255,255,255,0.05)]"
+              : "text-base backdrop-blur-0 bg-white"
+          }`}
+      >
         <div className="flex flex-row items-center justify-start">
-          <a href="#" className="text-white text-sm px-1 py-2">
+          <a href="#" className="text-sm px-1 py-2">
             Home
           </a>
         </div>
         <div className="flex flex-row items-center justify-start rounded-[10px] hover:bg-[#00000029]">
-          <a href="#" className="text-white text-sm px-1 py-2">
+          <a href="#" className="text-sm px-1 py-2">
             Solutions
           </a>
           <div className="flex flex-row items-center justify-center relative aspect-[1/1] transform-none w-3 h-3">
@@ -60,27 +71,27 @@ export default function Navbar() {
           </div>
         </div>
         <div className="flex flex-row items-center justify-start rounded-[10px] hover:bg-[#00000029]">
-          <a href="#" className="text-white text-sm px-1 py-2">
+          <a href="#" className="text-sm px-1 py-2">
             Platform
           </a>
         </div>
         <div className="flex flex-row items-center justify-start rounded-[10px] hover:bg-[#00000029]">
-          <a href="#" className="text-white text-sm px-1 py-2">
+          <a href="#" className="text-sm px-1 py-2">
             Customers
           </a>
         </div>
         <div className="flex flex-row items-center justify-start rounded-[10px] hover:bg-[#00000029]">
-          <a href="#" className="text-white text-sm px-1 py-2">
+          <a href="#" className="text-sm px-1 py-2">
             Pricing
           </a>
         </div>
         <div className="flex flex-row items-center justify-start rounded-[10px] hover:bg-[#00000029]">
-          <a href="#" className="text-white text-sm px-1 py-2">
+          <a href="#" className="text-sm px-1 py-2">
             Studio
           </a>
         </div>
         <div className="flex flex-row items-center justify-start rounded-[10px] hover:bg-[#00000029]">
-          <a href="#" className="text-white text-sm px-1 py-2">
+          <a href="#" className="text-sm px-1 py-2">
             Explore
           </a>
         </div>

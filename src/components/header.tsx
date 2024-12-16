@@ -1,6 +1,10 @@
-export default function Header() {
+export default function Header({ headerRef }: any) {
+  console.log(headerRef);
   return (
-    <section className="flex items-center flex-col gap-3 min-h-fit overflow-hidden p-0 relative w-full order-3 h-screen mb-16">
+    <section
+      ref={headerRef}
+      className="flex items-center flex-col gap-3 min-h-fit overflow-hidden p-0 relative w-full order-3 h-screen mb-16"
+    >
       <div className="w-full h-full flex items-center flex-col justify-center overflow-hidden p-5 relative">
         <div className="flex items-center flex-col gap-0 justify-start inset-0 overflow-hidden p-0 absolute">
           <div className="flex items-center flex-[1_0_0px] flex-col gap-3 h-[1px] justify-center overflow-visible p-0 relative w-full">
