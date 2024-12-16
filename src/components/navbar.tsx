@@ -22,7 +22,7 @@ export default function Navbar() {
             <div className="flex items-center justify-center flex-none flex-row flex-nowrap gap-3 h-min w-min overflow-visible p-0 relative">
               <a
                 href="#"
-                className="px-4 py-2 text-sm whitespace-nowrap text-white font-bold lg:border-[1px] lg:rounded-[50px] backdrop-blur-[10px] bg-gradient-to-r from-[rgba(255,255,255,0.08)] to-[rgba(255,255,255,0.05)]"
+                className="px-4 py-2 text-sm whitespace-nowrap text-white font-bold lg:border-[1px] lg:rounded-[50px] lg:hover:backdrop-blur-[10px] lg:hover:bg-[#ffffff1f]"
               >
                 Log in
               </a>
@@ -47,7 +47,7 @@ export default function Navbar() {
             Home
           </a>
         </div>
-        <div className="flex flex-row items-center justify-start">
+        <div className="flex flex-row items-center justify-start rounded-[10px] hover:bg-[#00000029]">
           <a href="#" className="text-white text-sm px-1 py-2">
             Solutions
           </a>
@@ -59,27 +59,27 @@ export default function Navbar() {
             <div className="bg-white rounded-full transform-none origin-center h-[1px] w-full absolute top-1/2 left-0 -translate-y-1/2 overflow-visible"></div>
           </div>
         </div>
-        <div className="flex flex-row items-center justify-start">
+        <div className="flex flex-row items-center justify-start rounded-[10px] hover:bg-[#00000029]">
           <a href="#" className="text-white text-sm px-1 py-2">
             Platform
           </a>
         </div>
-        <div className="flex flex-row items-center justify-start">
+        <div className="flex flex-row items-center justify-start rounded-[10px] hover:bg-[#00000029]">
           <a href="#" className="text-white text-sm px-1 py-2">
             Customers
           </a>
         </div>
-        <div className="flex flex-row items-center justify-start">
+        <div className="flex flex-row items-center justify-start rounded-[10px] hover:bg-[#00000029]">
           <a href="#" className="text-white text-sm px-1 py-2">
             Pricing
           </a>
         </div>
-        <div className="flex flex-row items-center justify-start">
+        <div className="flex flex-row items-center justify-start rounded-[10px] hover:bg-[#00000029]">
           <a href="#" className="text-white text-sm px-1 py-2">
             Studio
           </a>
         </div>
-        <div className="flex flex-row items-center justify-start">
+        <div className="flex flex-row items-center justify-start rounded-[10px] hover:bg-[#00000029]">
           <a href="#" className="text-white text-sm px-1 py-2">
             Explore
           </a>

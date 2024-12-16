@@ -2,14 +2,20 @@ import React from "react";
 
 export default function Testimoniale() {
   return (
-    <section className="h-fit lg:max-w-[1200px] relative w-full p-5 lg:p-0 mx-auto lg:h-[500px] lg:mb-20">
-      <div className="flex flex-col gap-2 min-h-fit justify-start items-end overflow-hidden relative lg:p-0 bg-[#b3ab9c] lg:bg-transparent p-[7px] rounded-2xl">
+    <section className="h-fit lg:max-w-[1200px] relative w-full lg:p-0 mx-auto lg:h-[500px] lg:mb-20">
+      <div className="flex flex-col w-full h-full gap-2 min-h-fit justify-start items-end overflow-hidden relative lg:p-0 bg-[#b3ab9c] lg:bg-transparent p-[7px] rounded-2xl">
         <div className="w-full h-full rounded-2xl overflow-hidden relative mb-4">
-          <img
-            src="https://framerusercontent.com/images/swwJEc9GKgjd1l8QRMRIYuQMb0.png"
-            alt=""
-            className="w-full lg:h-[550px] object-center-top object-cover aspect-[1.25 / 1]"
-          />
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full aspect-[1.7655172413793103]">
+            <iframe
+              src="https://player.vimeo.com/video/913358090?muted=1&autoplay=1&autopause=0&controls=0&loop=1&app_id=122963"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+              __idm_id__="2433029"
+              data-ready="true"
+              className="absolute inset-0 w-[1200px] h-full"
+              allowFullScreen
+            ></iframe>
+          </div>
           <div className="flex flex-col justify-center items-center w-12 h-12 backdrop-blur-[10px] absolute left-[10px] bottom-[10px] rounded-[100px] shadow-[inset_0px_1px_1px_0px_rgba(255,255,255,0.5),_0px_0px_0px_1px_rgba(158,157,155,0.08),_0px_2px_4px_0px_rgba(0,0,0,0.06)]">
             <div className="w-5 h-5">
               <svg
@@ -45,7 +51,7 @@ export default function Testimoniale() {
             Director of Customer Success
           </p>
         </div>
-        <div className="lg:flex max-w-md p-5 hidden bottom-[40px] right-[20px] absolute flex-col items-start justify-start backdrop-blur-[50px] bg-gradient-to-br from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0)] rounded-[12px]">
+        <div className="lg:flex max-w-[350px] p-6 hidden bottom-[40px] right-[20px] absolute flex-col items-start justify-start backdrop-blur-[50px] bg-gradient-to-br from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0)] rounded-[12px]">
           <h6 className="text-white text-[25px] mb-14">
             “I'm already getting calls from people all around the world in
             different functions who have heard about Planhat and want to get
