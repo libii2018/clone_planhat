@@ -5,7 +5,7 @@ export default function Footer() {
     <section className="flex flex-col items-center justify-start overflow-hidden w-full">
       <div className="flex flex-col items-center justify-start overflow-hidden w-full lg:px-40 px-5 py-5">
         <div className="flex flex-col lg:flex-row gap-28 w-full lg:border-b-[1px] mb-16">
-          <div className="flex flex-col items-start justify-start overflow-hidden gap-6 mb-16 w-full lg:w-[30%]">
+          <div className="flex flex-col items-start justify-start overflow-hidden gap-6 mb-16 w-full lg:max-w-[310px]">
             <div className="flex flex-col items-start justify-start overflow-hidden w-full ">
               <a href="#" className="text-black text-xl font-semibold">
                 planhat
@@ -15,7 +15,7 @@ export default function Footer() {
                 className="flex flex-row items-start justify-start overflow-hidden w-fit gap-4 py-[6px] pb-[4px] no-underline"
               >
                 {/* <div className="size-4 relative bg-black"></div> */}
-                <div className="bg-[#f2f2f2] rounded-[100px] h-auto overflow-hidden relative w-[1px]"></div>
+                {/* <div className="bg-[#f2f2f2] rounded-[100px] h-auto overflow-hidden relative w-[1px]"></div> */}
                 <div className="flex flex-row items-start justify-start overflow-hidden w-fit gap-1">
                   <div className="flex flex-col items-start justify-start w-3 h-3 relative">
                     <svg
@@ -91,7 +91,7 @@ export default function Footer() {
               />
             </div>
             <div className="flex flex-col items-start justify-start overflow-hidden w-full pb-10 border-b-[1px] lg:border-none">
-              <p className="text-[#575551] text-xs font-normal text-left w-[230px] mb-4">
+              <p className="text-[#575551] text-xs font-normal text-left max-w-[260px] mb-4">
                 Thought-leading customer-centric content, direct to your inbox
                 every month.
               </p>
@@ -125,7 +125,7 @@ export default function Footer() {
               </p>
             </div>
           </div>
-          <div className="grid w-full gap-[30px] lg:w-[70%] auto-rows-min grid-cols-[1fr_1fr] lg:grid-cols-[1fr_1fr_1fr] h-min justify-start overflow-visible p-0 relative pb-10 border-b-[1px] mb-10 lg:border-none">
+          <div className="grid w-full gap-[30px] auto-rows-min grid-cols-[1fr_1fr] lg:grid-cols-[1fr_1fr_1fr] h-min justify-start overflow-visible p-0 relative pb-10 border-b-[1px] mb-10 lg:border-none">
             <div className="flex flex-col items-start gap-[14px] h-auto justify-start overflow-visible w-full">
               <p className="text-[#9e9d9b] text-xs font-normal">Solutions</p>
               <div className="flex flex-col items-start justify-start gap-3 w-full">
@@ -407,12 +407,14 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="w-20 h-20 relative overflow-hidden">
-              <img
-                src="https://framerusercontent.com/images/2kXpASYjqQ87tTMA9liDJO1RYI.svg"
-                alt=""
-                className="aspect-[1/1] w-full h-full object-center object-cover"
-              />
+            <div className="flex flex-col items-start justify-end h-full">
+              <div className="w-20 h-20 relative overflow-hidden">
+                <img
+                  src="https://framerusercontent.com/images/2kXpASYjqQ87tTMA9liDJO1RYI.svg"
+                  alt=""
+                  className="aspect-[1/1] w-full h-full object-center object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
